@@ -1,0 +1,44 @@
+<!--
+<div class="flex gap">
+  <button class="primary">$s1-primary</button>
+  <button class="secondary">$s1-secondary</button>
+  <button class="tertiary">$s1-tertiary</button>
+  <button class="neutral">$s1-neutral</button>
+  <button class="neutral-variant">$s1-neutral-variant</button>
+</div>
+
+<div class="flex gap-1">
+  <button class="primary s2">$s2-primary</button>
+  <button class="secondary s2">$s2-secondary</button>
+  <button class="tertiary s2">$s2-tertiary</button>
+  <button class="neutral s2">$s2-neutral</button>
+  <button class="neutral-variant s2">$s2-neutral-variant</button>
+</div> -->
+
+
+<p class="">Directive appThemeColor
+</p>
+<div class="flex gap">
+  <button appThemeColor="primary">$s1-primary</button>
+  <button appThemeColor="secondary">$s1-secondary</button>
+  <button appThemeColor="tertiary">$s1-tertiary</button>
+  <button appThemeColor="neutral">$s1-neutral</button>
+  <button appThemeColor="neutral-variant">$s1-neutral-variant</button>
+</div>
+
+<hr class=" h-6">
+<div class="flex gap-1 p-2 border-fuchsia-500 border-4 border-solid">
+  <button (click)="switchTheme('s1-theme')">System 1 Theme</button>
+  <button (click)="switchTheme('s2-theme')">System 2 Theme</button>
+  <button (click)="switchTheme('')">reset</button>
+</div>
+
+<div> Theme : {{theme() || 'default'}}</div>
+
+<div class="flex gap-1">
+  <button class="primary">$s1-primary</button>
+  <button class="secondary">$s1-secondary</button>
+  <button class="tertiary">$s1-tertiary</button>
+  <button class="neutral">$s1-neutral</button>
+  <button class="neutral-variant">$s1-neutral-variant</button>
+</div>

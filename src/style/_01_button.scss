@@ -1,0 +1,141 @@
+
+$default-primary: #390099;
+$default-secondary: #9E0059;
+$default-tertiary: #FF0054;
+$default-neutral: #FF5400;
+$default-neutral-variant: #FFBD00;
+
+$s1-primary: #D62828;
+$s1-secondary: #003049;
+$s1-tertiary: #F77F00;
+$s1-neutral: #EAE2B7;
+$s1-neutral-variant: #FCBF49;
+
+$s2-primary: #606C38;
+$s2-secondary: #283618;
+$s2-tertiary: #FEFAE0;
+$s2-neutral: #DDA15E;
+$s2-neutral-variant: #BC6C25;
+
+button {
+  font-size: small;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 4px 8px;
+  min-width: 36px;
+  border-radius: 5px;
+  height: 24px;
+  line-height: 12px;
+}
+
+
+button.primary {
+  background-color: $default-primary;
+}
+
+button.secondary {
+  background-color: $default-secondary;
+}
+
+button.tertiary {
+  background-color: $default-tertiary;
+}
+
+button.neutral {
+  background-color: $default-neutral;
+}
+
+button.neutral-variant {
+  background-color: $default-neutral-variant;
+}
+
+
+// button.primary.s2 {
+//   background-color: $s2-primary;
+// }
+
+// button.secondary.s2 {
+//   background-color: $s2-secondary;
+// }
+
+// button.tertiary.s2 {
+//   background-color: $s2-tertiary;
+// }
+
+// button.neutral.s2 {
+//   background-color: $s2-neutral;
+// }
+
+// button.neutral-variant.s2 {
+//   background-color: $s2-neutral-variant;
+// }
+
+
+
+// button.primary {
+//   background-color: $s1-primary;
+// }
+
+// button.secondary {
+//   background-color: $s1-secondary;
+// }
+
+// button.tertiary {
+//   background-color: $s1-tertiary;
+// }
+
+// button.neutral {
+//   background-color: $s1-neutral;
+// }
+
+// button.neutral-variant {
+//   background-color: $s1-neutral-variant;
+// }
+
+
+.s1-theme {
+  button.primary {
+    background-color: $s1-primary;
+  }
+
+  button.secondary {
+    background-color: $s1-secondary;
+  }
+
+  button.tertiary {
+    background-color: $s1-tertiary;
+  }
+
+  button.neutral {
+    background-color: $s1-neutral;
+  }
+
+  button.neutral-variant {
+    background-color: $s1-neutral-variant;
+  }
+}
+
+
+.s2-theme {
+
+  button.primary {
+    background-color: $s2-primary;
+  }
+
+  button.secondary {
+    background-color: $s2-secondary;
+  }
+
+  button.tertiary {
+    background-color: $s2-tertiary;
+  }
+
+  button.neutral {
+    background-color: $s2-neutral;
+  }
+
+  button.neutral-variant {
+    background-color: $s2-neutral-variant;
+  }
+}
