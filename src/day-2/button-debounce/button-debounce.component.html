@@ -1,0 +1,13 @@
+<div class="border border-red-300 border-solid p-5  m-5 relative after:content-['我是一個按鈕元件'] after:text-xs after:absolute after:top-0 after:w-full after:block">
+  <p></p>
+  <button #btn>{{buttonText()}}</button>
+  @if(buttonClick){
+  <p>
+    初始值是否是阿拉花瓜 ：{{buttonClick() ==='阿拉花瓜'}}
+  </p>
+  }
+  <p>
+    count : {{ count }}
+  </p>
+
+</div>
