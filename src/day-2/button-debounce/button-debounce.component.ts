@@ -18,7 +18,7 @@ export class ButtonDebounceComponent {
 
   private readonly injector = inject(Injector);
   count = 0; //計數器
-
+  timer: any
   ngAfterViewInit() {
     runInInjectionContext(this.injector, () => {
       if (this.btn) {
@@ -28,8 +28,11 @@ export class ButtonDebounceComponent {
               tap(() => {
                 console.log('睡不飽拉')
               }),
-              debounceTime(this.debounceInput()),
-              tap(()=> this.count++)
+              // debounceTime(this.debounceInput()),
+              // tap(()=> this.count++)
+              tap(()=>{
+                this._debounce()
+              })
             ),
           { initialValue: '阿拉花瓜' } //設定初始值
         );
@@ -37,5 +40,16 @@ export class ButtonDebounceComponent {
         console.error('Button element is not yet available');
       }
     });
+  }
+
+  private _debounce(): void {
+    console.log('Debounce triggered');
+    if (this.timer) {
+      clearTimeout(this.timer);
+    }
+    this.timer = setTimeout(() => {
+      console.log('Count incremented');
+      this.count++;
+    }, this.debounceInput());
   }
 }
