@@ -1,0 +1,32 @@
+<!-- <button (click)="openDialog(dialogTemplate)">打開彈窗</button>
+
+<ng-template #dialogTemplate>
+  <h3 matDialogTitle>彈窗標題</h3>
+  <mat-dialog-content>
+    彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="secondary" mat-dialog-close>取消</button>
+    <button class="primary" [mat-dialog-close] (click)="onConfirm()">確認</button>
+  </mat-dialog-actions>
+</ng-template> -->
+
+
+ <button (click)="openDialog()">打開彈窗</button>
+
+<ng-template #headerTemplate>
+  <h3 matDialogTitle>彈窗標題</h3>
+</ng-template>
+
+<ng-template #contentTemplate>
+  <mat-dialog-content>
+    彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容彈窗內容
+  </mat-dialog-content>
+</ng-template>
+
+<ng-template #actionTemplate>
+  <mat-dialog-actions>
+    <button class="secondary" mat-dialog-close>取消</button>
+    <button class="primary" [mat-dialog-close] (click)="onConfirm()">確認</button>
+  </mat-dialog-actions>
+</ng-template>
