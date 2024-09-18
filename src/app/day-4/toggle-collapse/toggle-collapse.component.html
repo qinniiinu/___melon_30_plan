@@ -1,0 +1,29 @@
+<section class="bg-neutral-100">
+  <div class="flex justify-end mb-16 gap-[20px]">
+    <button class="btn-text" (click)="accordion().openAll()">全部展開</button>
+    <button class="btn-text" (click)="accordion().closeAll()">全部閉合</button>
+  </div>
+
+
+  <mat-accordion multi>
+
+    @for (item of arrayList(); track $index) {
+    <div IsShowAccordionItem [total]="$count" [index]="$index" [(isExpanded)]="isExpanded">
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header >
+          這裡是標題
+        </mat-expansion-panel-header>
+        <div class="grid grid-cols-4  grid-rows-1 gap-[10px] m-16">
+          這裡是內容
+        </div>
+
+      </mat-expansion-panel>
+    </div>
+
+    }
+
+    <div toggleCollapseDirective [length]="length()" [(isExpanded)]="isExpanded"></div>
+  </mat-accordion>
+
+</section>
