@@ -1,12 +1,8 @@
 <div class="flex flex-col gap-4">
-  <button [routerLink]="['/day-1/button-color']" routerLinkActive="router-link-active"> Day 1 按鈕 theme</button>
-  <button [routerLink]="['/day-2/button-debounce']" routerLinkActive="router-link-active"> Day 2 按鈕debounce</button>
-  <button [routerLink]="['/day-3/dialog']" routerLinkActive="router-link-active" class="primary"> Day 3
-    Dialog</button>
-  <button [routerLink]="['/day-4/toggle']" routerLinkActive="router-link-active" class="primary"> Day 4
-    toggleDirective</button>
-  <button [routerLink]="['/day-5/screen-width']" routerLinkActive="router-link-active" class="primary"> Day 5
-    螢幕尺吋</button>
-  <button [routerLink]="['/day-6/screen-width']" routerLinkActive="router-link-active" class="primary"> Day
-    6</button>
+
+  @for (item of routerList; track $index) {
+  <button [routerLink]="[item.link]" routerLinkActive="router-link-active" [class]="item.class">
+    {{item.text}}
+  </button>
+  }
 </div>

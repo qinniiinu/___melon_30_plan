@@ -32,7 +32,7 @@ export const routes: Routes = [
     component: Day5PageComponent,
   },
   {
-    path: 'day-6/linePay',
+    path: 'day-6/line-pay',
     component: Day6PageComponent,
   },
 
