@@ -29,4 +29,5 @@ export const RouterList: IRouterItem[] = [
   { link: '/day-4/toggle', text: '4 toggleDirective', class: 'secondary' },
   { link: '/day-5/screen-width', text: '5 螢幕尺吋', class: 'accent' },
   { link: '/day-6/line-pay', text: '6 line pay', class: '' },
+  { link: '/day-8/cache', text: '8 cache', class: 'tertiary' },
 ]
