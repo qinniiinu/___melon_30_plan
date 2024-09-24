@@ -7,6 +7,7 @@ import { Day4PageComponent } from './day-4/day-4-page/day-4-page.component';
 import { Day5PageComponent } from './day-5/day-5-page/day-5-page.component';
 import { Day6PageComponent } from './day-6-page/day-6-page.component';
 import { Day8PageComponent } from './day-8/day-8-page/day-8-page.component';
+import { Day9PageComponent } from './day9/day-9-page/day-9-page.component';
 
 export const routes: Routes = [
 
@@ -44,6 +45,12 @@ export const routes: Routes = [
     path: 'day-8/cache',
     component: Day8PageComponent,
   },
+  {
+    path: 'day-9/timer',
+    component: Day9PageComponent,
+  },
+
+
 
 
 ];
