@@ -1,6 +1,16 @@
-<div>
-  {{ $timer() }}<br />
-  到期時間 {{ $finalTime() }}<br />
-  remain:{{ remain() | date : "mm:ss" }}
+<div class="flex flex-col gap-3">
+  <div>
+    設定倒數秒數 : <input class="bg-slate-500" type="number" #num (change)="modelInput.set(num.value);timerReStart() " [value]="modelInput()">
+
+  </div>
+  <p>
+    {{ $timer() }}
+  </p>
+  <p>到期時間 {{ $finalTime() }}</p>
+  <p>剩下時間:{{ remain() | date : "mm:ss" }}</p>
+
+<button (click)="onPause()">{{$isPause()?'繼續':'暫停'}}計時器</button>
+
+
+<button (click)="timerReStart()">重新開始</button>
 </div>
-暫停計時器
