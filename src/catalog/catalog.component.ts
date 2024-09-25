@@ -31,4 +31,6 @@ export const RouterList: IRouterItem[] = [
   { link: '/day-6/line-pay', text: '6 line pay', class: '' },
   { link: '/day-8/cache', text: '8 cache', class: 'tertiary' },
   { link: '/day-9/timer', text: '9 timer', class: 'primary' },
+  { link: '/day-10/file-drag', text: '10 file drag', class: 'primary' },
+  { link: '/day-11/ngx-translate', text: 'ngx-translate', class: '' },
 ]

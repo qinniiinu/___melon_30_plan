@@ -1,0 +1,5 @@
+<button (click)="translate('ja')">{{ "switchLanguageJp" | translate }}</button>
+<button (click)="translate('en-US')">{{ "switchLanguageEnglish" | translate }}</button>
+<button (click)="translate('zh-TW')">{{ "switchLanguageChinese" | translate }}</button>
+
+<div>{{ "hello" | translate : { value: "Alan" } }}</div>

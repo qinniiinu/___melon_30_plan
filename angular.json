@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": ["crypto-js"],
             "outputPath": "dist/ang18-try-bynode20",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -24,9 +25,16 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public/assets/i18n/",
+                "output": "/assets/i18n/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "public/",
+                "output": "/"
               }
             ],
             "styles": [
@@ -67,7 +75,7 @@
         "serve": {
           "options": {
             "port": 5300,
-            "proxyConfig":"proxy.config.json"
+            "proxyConfig": "proxy.config.json"
           },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
@@ -90,9 +98,16 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public/assets/i18n/",
+                "output": "/assets/i18n/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "public/",
+                "output": "/"
               }
             ],
             "styles": [

@@ -1,0 +1,6 @@
+{
+  "hello": "こんにちは {{value}}",
+  "switchLanguageJp": "日語",
+  "switchLanguageEnglish": "English",
+  "switchLanguageChinese": "中文"
+}
