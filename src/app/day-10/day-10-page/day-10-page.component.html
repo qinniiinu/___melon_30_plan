@@ -1,0 +1,15 @@
+<div
+  class="w-[400px] h-[400px] border-stone-600 border-2 border-solid"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave($event)"
+  (drop)="onFileDrop($event)"
+>
+  @if (!dragging()) {
+  <p>拖放檔案到這裡</p>
+
+  } @if (dragging()) {
+  <p>放開來上傳檔案</p>
+  } @if(fileName()){
+  <p>上傳的檔案:</p>
+  {{ fileName() }} }
+</div>
