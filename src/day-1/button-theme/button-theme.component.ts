@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { ThemeControlDirective } from './theme-control.directive';
+import { ThemeColorDirective } from './theme-color.directive';
 import { ThemeControlService } from './theme-control.service';
 
 @Component({
   selector: 'app-button-theme',
   standalone: true,
   imports: [
-    CommonModule,ThemeControlDirective
+    CommonModule,ThemeColorDirective
   ],
   templateUrl:'./button-theme.component.html',
   styleUrl: './button-theme.component.scss',
